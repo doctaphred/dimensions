@@ -76,9 +76,9 @@ TypeError
 
 >>> ssq = second * second
 >>> ssq
-<1 second[2]>
+<1 s*s>
 >>> (10 * s) ** 2
-<100 seconds[2]>
+<100 s*s>
 >>> 100 * ssq / s
 <100 seconds>
 
@@ -87,7 +87,7 @@ True
 
 >>> hz = 1 / s
 >>> hz
-<1 second[-1]>
+<1 1/s>
 
 >>> t[-1] = dimension.frequency('Hertz', 'Hz', pl='Hertz')
 >>> Hz
@@ -161,9 +161,9 @@ False
 False
 
 >>> s.Y * s.y
-<1 second[2]>
+<1 s*s>
 >>> s.E / Hz.a
-<1 second[2]>
+<1 s*s>
 >>> s.k - 1 * s
 <999 seconds>
 
@@ -176,7 +176,7 @@ Ok, now it REALLY gets fun:
 >>> m
 <1 meter>
 >>> m / s
-<1 meter/second>
+<1 m/s>
 
 >>> M = dimension.mass('gram', base=1000)
 >>> kg = M.unit
@@ -187,12 +187,12 @@ Ok, now it REALLY gets fun:
 
 >>> newton = kg * m / (s ** 2)
 >>> 2 * newton
-<2 kg*meters/second[2]>
+<2 kg*m/s/s>
 
 What happens if you apply 10 newtons of force to a 20 kg mass for 4 seconds?
 
 >>> (10 * newton) / (20 * kg) * (4 * s)
-<2 meters/second>
+<2 m/s>
 
 """
 
