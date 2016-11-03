@@ -189,6 +189,11 @@ Ok, now it REALLY gets fun:
 >>> 2 * newton
 <2 kg*meters/second[2]>
 
+What happens if you apply 10 newtons of force to a 20 kg mass for 4 seconds?
+
+>>> (10 * newton) / (20 * kg) * (4 * s)
+<2 meters/second>
+
 """
 
 # To be continued...
