@@ -187,7 +187,7 @@ Ok, now it REALLY gets fun:
 
 >>> newton = kg * m / (s ** 2)
 >>> 2 * newton
-<2 kg*meter/second[2]>
+<2 kg*meters/second[2]>
 
 """
 
